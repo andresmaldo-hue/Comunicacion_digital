@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DCCD - Diseño, Contenido y Comunicación Digital. Creamos piezas gráficas, administramos redes sociales y diseñamos campañas de alto impacto para emprendimientos, negocios e instituciones educativas.">
+  <meta name="keywords" content="DCCD, Diseño Gráfico, Contenido Digital, Manejo de Redes Sociales, Marketing Digital, Piezas Publicitarias, Anserma Caldas, Estrategia Digital">
+  <meta name="author" content="DCCD Equipo Creativo">
+  <title>DCCD | Diseño, Contenido y Comunicación Digital</title>
+
+  <!-- Favicon con Logo Oficial DCCD -->
+  <link rel="icon" type="image/jpeg" href="Imagenes/Logo/logo-dccd.jpg">
+
+  <!-- Tipografías Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Iconos Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Estilos Personalizados DCCD -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVEGACIÓN PRINCIPAL
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Marca & Logo DCCD -->
+      <a href="#" class="brand-logo" title="DCCD - Diseño, Contenido y Comunicación Digital">
+        <img src="Imagenes/Logo/logo-dccd.jpg" alt="Logo Oficial DCCD" width="48" height="48">
+        <div class="brand-text">
+          <span class="brand-name">DCCD</span>
+          <span class="brand-tag">Contenido & Marketing Digital</span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Quiénes Somos</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#galeria" class="nav-link">Portafolio</a></li>
+          <li><a href="#instagram" class="nav-link">Instagram</a></li>
+          <li><a href="#diagnostico" class="nav-link">Cotización</a></li>
+        </ul>
+      </nav>
+
+      <!-- Acciones de Cabecera: Inicio de Sesión y Botón de Cotización -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-outline btn-sm open-auth-modal" id="headerAuthBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Área Clientes</span>
+        </button>
+        <a href="#diagnostico" class="btn btn-primary btn-sm">
+          <span>Cotizar Ahora</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menú Móvil">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION / CARRUSEL DE 2 BANNERS (REQUISITO 1)
+         ========================================================================== -->
+    <section class="hero-carousel-section" id="inicio">
+      <div class="carousel-container">
+        
+        <!-- BANNER 1: RUMBO DIGITAL DE TU MARCA (Banner Oficial DCCD) -->
+        <div class="carousel-slide active" id="slide-1">
+          <div class="carousel-bg">
+            <img src="Imagenes/Banner/banner-rumbo-digital.jpg" alt="DCCD - Encuentra el rumbo digital de tu marca">
+          </div>
+          <div class="carousel-overlay"></div>
+          <div class="container">
+            <div class="carousel-content">
+              <span class="carousel-badge">
+                <i class="fa-solid fa-sparkles"></i> Tu idea también importa
+              </span>
+              <h1 class="carousel-title">
+                Encuentra el <span class="highlight">RUMBO DIGITAL</span> de tu marca
+              </h1>
+              <p class="carousel-desc">
+                Tu visión, nuestra creatividad. Juntos hacemos que pase. Impulsamos tu negocio con piezas gráficas memorables y estrategias de contenido digital que generan resultados reales.
+              </p>
+              <div class="carousel-cta">
+                <a href="#diagnostico" class="btn btn-accent btn-lg">
+                  <span>Decide Hoy</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#galeria" class="btn btn-outline btn-lg">
+                  <i class="fa-solid fa-images"></i>
+                  <span>Ver Piezas Gráficas</span>
+                </a>
+              </div>
+              <div class="carousel-pillars">
+                <div class="pillar-item">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <span>Estrategia Digital</span>
+                </div>
+                <div class="pillar-item">
+                  <i class="fa-regular fa-lightbulb"></i>
+                  <span>Ideas Creativas</span>
+                </div>
+                <div class="pillar-item">
+                  <i class="fa-solid fa-bullseye"></i>
+                  <span>Resultados Reales</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BANNER 2: EQUIPO CREATIVO DCCD (Creamos • Conectamos • Impactamos) -->
+        <div class="carousel-slide" id="slide-2">
+          <div class="carousel-bg">
+            <img src="Imagenes/Banner/banner-equipo-creativo.jpg" alt="Equipo Creativo DCCD">
+          </div>
+          <div class="carousel-overlay"></div>
+          <div class="container">
+            <div class="carousel-content">
+              <span class="carousel-badge" style="background: rgba(95, 116, 68, 0.3); border-color: var(--primary-green-light); color: var(--text-light-green);">
+                <i class="fa-solid fa-users"></i> DCCD Equipo Creativo
+              </span>
+              <h2 class="carousel-title">
+                Creamos • Conectamos • <span class="highlight">Impactamos</span>
+              </h2>
+              <p class="carousel-desc">
+                Especialistas en diseño de piezas gráficas y contenido digital para emprendimientos, negocios e instituciones educativas. Damos identidad propia a cada uno de tus proyectos.
+              </p>
+              <div class="carousel-cta">
+                <a href="#nosotros" class="btn btn-primary btn-lg">
+                  <span>Conoce al Equipo</span>
+                  <i class="fa-solid fa-arrow-down"></i>
+                </a>
+                <a href="https://wa.me/573000000000?text=Hola%20equipo%20DCCD,%20quiero%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20de%20dise%C3%B1o%20y%20contenido" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Asesoría por WhatsApp</span>
+                </a>
+              </div>
+              <div class="carousel-pillars">
+                <div class="pillar-item">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <span>Diseño Gráfico</span>
+                </div>
+                <div class="pillar-item">
+                  <i class="fa-solid fa-share-nodes"></i>
+                  <span>Redes Sociales</span>
+                </div>
+                <div class="pillar-item">
+                  <i class="fa-solid fa-video"></i>
+                  <span>Contenido Audiovisual</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles Prev / Next -->
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Banner anterior">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" id="carouselNext" aria-label="Banner siguiente">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Indicadores Dots -->
+        <div class="carousel-dots">
+          <button class="carousel-dot active" data-slide="0" aria-label="Banner 1"></button>
+          <button class="carousel-dot" data-slide="1" aria-label="Banner 2"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BARRA DE CONFIANZA & STATS
+         ========================================================================== -->
+    <section class="trust-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">+150</div>
+            <div class="stat-label">Piezas Gráficas Diseñadas</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Atención Cercana y Personalizada</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">9:16 & 1:1</div>
+            <div class="stat-label">Formatos Optimizados para Redes</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Innovación & Compromiso Creativo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         QUIÉNES SOMOS (REQUISITO 6)
+         ========================================================================== -->
+    <section class="about-section section-padding" id="nosotros">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Columna Imagen / Showcase -->
+          <div class="about-image-card">
+            <img src="Imagenes/Banner/banner-equipo-creativo.jpg" alt="Integrantes del Equipo Creativo DCCD">
+            <div class="about-image-badge">
+              <div class="badge-text">
+                <h4>DCCD • Equipo Creativo</h4>
+                <p>Pasión por el diseño, el contenido y la innovación digital</p>
+              </div>
+              <div class="badge-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Texto Oficial Requisito 6 -->
+          <div class="about-content">
+            <span class="section-badge">
+              <i class="fa-solid fa-users-viewfinder"></i> Quiénes Somos
+            </span>
+            <h2 class="section-title">
+              Impulsamos tu marca con <span>creatividad e innovación</span>
+            </h2>
+            <p class="about-paragraph">
+              Somos un equipo creativo especializado en el diseño de piezas gráficas y la creación de contenido digital para emprendimientos, negocios e instituciones educativas. Nuestro objetivo es ayudar a cada cliente a fortalecer su imagen, destacar en el mundo digital y comunicar sus ideas de una manera creativa, moderna y atractiva.
+            </p>
+            <p class="about-paragraph" style="color: var(--text-muted); font-size: 0.98rem;">
+              Ofrecemos servicios de diseño gráfico, creación y edición de contenido audiovisual, manejo de redes sociales y desarrollo de estrategias de comunicación digital, adaptándonos a las necesidades y al estilo de cada cliente. Nos caracterizamos por brindar una atención cercana y personalizada, ofrecer soluciones accesibles y trabajar con creatividad, compromiso e innovación para que cada proyecto tenga una identidad propia y pueda conectar mejor con su público.
+            </p>
+
+            <!-- Pilares de Valor -->
+            <div class="values-grid">
+              <div class="value-pill">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Creatividad Sin Límites</span>
+              </div>
+              <div class="value-pill">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <span>Atención Cercana</span>
+              </div>
+              <div class="value-pill">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <span>Soluciones Accesibles</span>
+              </div>
+              <div class="value-pill">
+                <i class="fa-solid fa-fingerprint"></i>
+                <span>Identidad Propia</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 32px;">
+              <a href="#diagnostico" class="btn btn-primary">
+                <span>Comienza tu Proyecto con Nosotros</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICIOS: REDES SOCIALES Y PROMOCIÓN (REQUISITOS 3 Y 4)
+         ========================================================================== -->
+    <section class="services-section section-padding" id="servicios">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-badge">
+            <i class="fa-solid fa-layer-group"></i> Nuestros Servicios
+          </span>
+          <h2 class="section-title">
+            Especialistas en <span>Contenido Digital & Marketing</span>
+          </h2>
+          <p class="section-subtitle">
+            Soluciones integrales de comunicación visual pensadas para posicionar tu negocio, captar la atención de tu audiencia y aumentar tus ventas.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- SERVICIO 1: ADMINISTRACIÓN DE REDES SOCIALES (REQUISITO 3) -->
+          <div class="service-card featured">
+            <span class="service-featured-badge">Servicio Estrella</span>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-hashtag"></i>
+            </div>
+            <h3 class="service-title">Administración de Redes Sociales</h3>
+            <p class="service-desc">
+              Transformamos tus perfiles sociales en un imán de clientes. Diseñamos parrillas de contenido estratégico, optimizamos el feed y mantenemos tu comunidad activa e informada.
+            </p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Curaduría visual del feed:</strong> Diseño armónico y profesional en Instagram y Facebook.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Reels y Carruseles:</strong> Piezas dinámicas con copywriting persuasivo y hashtags estratégicos.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Calendario mensual:</strong> Publicaciones programadas con frecuencia constante.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Moderación de comunidad:</strong> Respuestas oportunas y atención a potenciales compradores.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Informes analíticos:</strong> Monitoreo mensual de alcance, seguidores e interacción.</li>
+            </ul>
+            <a href="#diagnostico" class="btn btn-outline btn-sm">
+              <span>Cotizar Plan de Redes</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <!-- SERVICIO 2: PROMOCIÓN DE PRODUCTOS Y ACTIVIDADES (REQUISITO 4) -->
+          <div class="service-card featured">
+            <span class="service-featured-badge" style="background: rgba(2, 132, 199, 0.2); border-color: var(--accent-cyan-light); color: var(--accent-cyan-light);">A la Medida</span>
+            <div class="service-icon-box" style="background: rgba(2, 132, 199, 0.2); border-color: var(--accent-cyan); color: var(--accent-cyan-light);">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <h3 class="service-title">Promoción de Productos o Actividades</h3>
+            <p class="service-desc">
+              Diseñamos campañas promocionales personalizadas según el objetivo de tu negocio: lanzar un producto al mercado, incentivar ventas o promocionar eventos y ferias especiales.
+            </p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Promoción de Productos:</strong> Anuncios publicitarios de alta conversión para perfumería, gastronomía, moda, deportes y tecnología.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Promoción de Actividades:</strong> Difusión de eventos deportivos, torneos, ferias científicas e institucionales.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Pauta Digital Estratégica:</strong> Segmentación precisa en Meta Ads (Instagram y Facebook Ads).</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Formatos Multicanal:</strong> Historias (9:16), posts de feed (1:1 / 4:5) y banners web.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Adaptabilidad total:</strong> Ajustamos el enfoque al presupuesto y metas de cada cliente.</li>
+            </ul>
+            <a href="#diagnostico" class="btn btn-outline btn-sm">
+              <span>Personalizar Mi Campaña</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <!-- SERVICIO 3: DISEÑO DE PIEZAS GRÁFICAS & BRANDING -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h3 class="service-title">Diseño Gráfico & Identidad Visual</h3>
+            <p class="service-desc">
+              Construimos la personalidad visual de tu proyecto. Desde logotipos memorables y paletas cromáticas hasta credenciales, escarapelas y afiches institucionales.
+            </p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Diseño de Logotipo:</strong> Identidad corporativa moderna, versátil y atemporal.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Manual de Marca:</strong> Tipografías, códigos de color y guía de uso.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Publicidad para Negocios:</strong> Menús gastronómicos, flyers, catálogos digitales y empaques.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Piezas Educativas:</strong> Afiches para ferias escolares, diplomas, gafetes y carnets.</li>
+            </ul>
+            <a href="#galeria" class="btn btn-outline btn-sm">
+              <span>Explorar Trabajos</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <!-- SERVICIO 4: CREACIÓN Y EDICIÓN AUDIOVISUAL -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-film"></i>
+            </div>
+            <h3 class="service-title">Contenido Audiovisual & Video</h3>
+            <p class="service-desc">
+              El video es el formato rey en el ecosistema digital actual. Creamos y editamos reels dinámicos, videos de presentación de producto y animaciones publicitarias.
+            </p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-circle-check"></i> Edición ágil con transiciones modernas y efectos visuales.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Subtítulos estilizados para retención de audiencia.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Selección musical con tendencias comerciales.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Formatos verticales 9:16 para TikTok e Instagram Reels.</li>
+            </ul>
+            <a href="#diagnostico" class="btn btn-outline btn-sm">
+              <span>Solicitar Cotización</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <!-- SERVICIO 5: ESTRATEGIA DE COMUNICACIÓN DIGITAL -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <h3 class="service-title">Estrategia de Comunicación Digital</h3>
+            <p class="service-desc">
+              No solo publicamos contenido; trazamos el rumbo digital adecuado. Definimos tu tono de voz de marca, pilares temáticos y planes de acción para conectar con tu audiencia ideal.
+            </p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-circle-check"></i> Diagnóstico de presencia digital actual.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Definición de propuesta de valor y buyer persona.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Plan de comunicación y tácticas de conversión.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Acompañamiento constante y asesoría personalizada.</li>
+            </ul>
+            <a href="#diagnostico" class="btn btn-outline btn-sm">
+              <span>Recibir Diagnóstico</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <!-- SERVICIO 6: ATENCIÓN PARA INSTITUCIONES EDUCATIVAS -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="service-title">Instituciones Educativas & Colegios</h3>
+            <p class="service-desc">
+              Soluciones gráficas dedicadas a colegios, ferias estudiantiles y academias. Desarrollamos material visual didáctico, carnets, escarapelas y afiches institucionales.
+            </p>
+            <ul class="service-features-list">
+              <li><i class="fa-solid fa-circle-check"></i> Diseño para Ferias de la Ciencia, Deporte y Cultura.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Escarapelas, gafetes y distinciones personalizadas.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Piezas de convocatoria para matrículas y admisiones.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Tarifas especiales y paquetes accesibles para entidades.</li>
+            </ul>
+            <a href="#galeria" class="btn btn-outline btn-sm">
+              <span>Ver Proyectos Escolares</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GALERÍA DE PIEZAS GRÁFICAS (REQUISITO 2)
+         ========================================================================== -->
+    <section class="gallery-section section-padding" id="galeria">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-badge">
+            <i class="fa-solid fa-photo-film"></i> Portafolio de Trabajos
+          </span>
+          <h2 class="section-title">
+            Galería de <span>Piezas Gráficas Realizadas</span>
+          </h2>
+          <p class="section-subtitle">
+            Explora una muestra de nuestras creaciones publicitarias para diferentes sectores y clientes. Cada pieza está diseñada con atención al detalle y enfoque en alta conversión visual.
+          </p>
+        </div>
+
+        <!-- Filtros de Galería -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Todos los Trabajos</button>
+          <button class="filter-btn" data-filter="productos">Publicidad & Productos</button>
+          <button class="filter-btn" data-filter="gastronomia">Gastronomía & Parrilla</button>
+          <button class="filter-btn" data-filter="deportes">Deportes & Aventura</button>
+          <button class="filter-btn" data-filter="educativo">Educativo & Institucional</button>
+        </div>
+
+        <!-- Rejilla de Imágenes -->
+        <div class="gallery-grid">
+          
+          <!-- Pieza 1: Velora Parfums (Publicidad de Producto) -->
+          <div class="gallery-item" 
+               data-category="productos" 
+               data-title="Velora Parfums - Una Fragancia Que Deja Huella" 
+               data-category-name="Publicidad & Productos" 
+               data-client="Velora Parfums" 
+               data-description="Pieza publicitaria vertical (formato 9:16) diseñada para el lanzamiento de la línea premium de perfumes Velora (Jardín Imperial, Orquídea Nocturna y Lirio de Oro). Composición elegante con iluminación cálida, reflejos dorados y logotipo de DCCD.">
+            <div class="gallery-thumb-wrap">
+              <img src="Imagenes/piezas graficas/pieza-fragancia-velora.png" alt="Velora Parfums - Pieza publicitaria de fragancias DCCD" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Alta Perfumería</span>
+                <h4 class="gallery-title">Velora Parfums</h4>
+                <p class="gallery-meta">Campaña de Producto • Formato 9:16</p>
+              </div>
+              <div class="gallery-zoom-icon">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pieza 2: Café Artesanal (Gastronomía) -->
+          <div class="gallery-item" 
+               data-category="gastronomia" 
+               data-title="Café Artesanal - El Sabor que Comienza en Nuestra Tierra" 
+               data-category-name="Gastronomía & Parrilla" 
+               data-client="Café Artesanal Colombiano" 
+               data-description="Campaña visual para marca de café de origen colombiano. Enfoque rústico y acogedor con tonos terrosos, taza con latte art y granos tostados, evocando tradición, sabor auténtico y experiencia barista. Con sello DCCD.">
+            <div class="gallery-thumb-wrap">
+              <img src="Imagenes/piezas graficas/pieza-cafe-artesanal.png" alt="Café Artesanal - Pieza publicitaria DCCD" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Gastronomía</span>
+                <h4 class="gallery-title">Café Artesanal</h4>
+                <p class="gallery-meta">Branding de Origen • Formato 9:16</p>
+              </div>
+              <div class="gallery-zoom-icon">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pieza 3: Bicicletas MTB & Aventura (Deportes) -->
+          <div class="gallery-item" 
+               data-category="deportes" 
+               data-title="MTB Aventura - Tu Camino Comienza Aquí" 
+               data-category-name="Deportes & Aventura" 
+               data-client="Tienda de Ciclismo & Aventura" 
+               data-description="Afiche publicitario de alta adrenalina para tienda de bicicletas de montaña, indumentaria y accesorios deportivos. Captura de ciclista en ruta extrema de montaña, tipografía audaz y diseño de alto impacto visual con sello DCCD.">
+            <div class="gallery-thumb-wrap">
+              <img src="Imagenes/piezas graficas/pieza-ciclismo-mtb.png" alt="MTB Bicicletas y Aventura - Anuncio publicitario DCCD" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Deportes & Actividades</span>
+                <h4 class="gallery-title">Ciclismo MTB</h4>
+                <p class="gallery-meta">Bicicletas & Aventura • Formato 9:16</p>
+              </div>
+              <div class="gallery-zoom-icon">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pieza 4: Hamburguesas Artesanales (Gastronomía Gourmet) -->
+          <div class="gallery-item" 
+               data-category="gastronomia" 
+               data-title="Hamburguesas Artesanales - El Sabor Que Se Queda Contigo" 
+               data-category-name="Gastronomía & Parrilla" 
+               data-client="Burger Grill House" 
+               data-description="Publicidad de alimentos y bebidas con iluminación cinematográfica de parrilla. Primer plano apetecible de hamburguesa artesanal con queso derretido, cebolla caramelizada y papas rústicas, diseñado para estimular el apetito y generar pedidos inmediatos.">
+            <div class="gallery-thumb-wrap">
+              <img src="Imagenes/piezas graficas/pieza-hamburguesas.jpg" alt="Hamburguesas Artesanales a la Parrilla - DCCD" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Gastronomía & Parrilla</span>
+                <h4 class="gallery-title">Burger Gourmet</h4>
+                <p class="gallery-meta">Campaña Gastronómica • Formato 9:16</p>
+              </div>
+              <div class="gallery-zoom-icon">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pieza 5: XXIII Feria de las Ciencias Educativa (Educativo) -->
+          <div class="gallery-item" 
+               data-category="educativo" 
+               data-title="XXIII Feria de las Ciencias 2026 - I.E. Aureliano Flórez Cardona" 
+               data-category-name="Educativo & Institucional" 
+               data-client="Institución Educativa Aureliano Flórez Cardona (Anserma, Caldas)" 
+               data-description="Diseño de afiche institucional para la XXIII Feria de las Ciencias 2026 (Grado 11-B). Composición colorida e ilustrada con microscopio, energía solar fotovoltaica, átomo y tecnología, representando el talento juvenil y la innovación académica.">
+            <div class="gallery-thumb-wrap horizontal">
+              <img src="Imagenes/piezas graficas/pieza-educativa.png" alt="Feria de las Ciencias - Institución Educativa Aureliano Flórez Cardona DCCD" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Institucional Escolar</span>
+                <h4 class="gallery-title">Feria de las Ciencias</h4>
+                <p class="gallery-meta">I.E. Aureliano Flórez Cardona • 2026</p>
+              </div>
+              <div class="gallery-zoom-icon">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INSTAGRAM & REDES SOCIALES DCCD (REQUISITO 7)
+         ========================================================================== -->
+    <section class="instagram-cta-section section-padding" id="instagram">
+      <div class="container">
+        <div class="instagram-card">
+          <!-- Columna Texto & Enlaces Requisito 7 -->
+          <div class="instagram-info">
+            <div class="instagram-header">
+              <div class="instagram-icon-gradient">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div>
+                <span class="instagram-sub">Nuestra Cuenta Oficial</span>
+                <h3 class="instagram-handle">@digitalcominicacion749</h3>
+              </div>
+            </div>
+            <h2 style="font-size: 1.8rem; margin-bottom: 14px; color: #ffffff;">
+              Descubre en nuestro Instagram la <span style="color: var(--accent-yellow);">calidad de lo que ofrecemos</span>
+            </h2>
+            <p class="instagram-text">
+              Contáctanos y síguenos en nuestra cuenta de Instagram <strong>@digitalcominicacion749</strong>, en la cual puedes ver de manera actualizada algunas de las piezas gráficas que hemos realizado para nuestros clientes y constatar de primera mano la dedicación, estética y calidad profesional de nuestros servicios de contenido y comunicación.
+            </p>
+            <div class="instagram-actions">
+              <a href="https://www.instagram.com/digitalcominicacion749/" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-lg">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Ver Perfil en Instagram</span>
+              </a>
+              <a href="https://wa.me/573000000000?text=Hola%20DCCD,%20vi%20su%20Instagram%20y%20quiero%20cotizar%20piezas%20gr%C3%A1ficas" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Escríbenos por WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna Mockup Visual Feed de Instagram -->
+          <div class="instagram-mockup">
+            <div class="mockup-header">
+              <div class="mockup-user">
+                <img src="Imagenes/Logo/logo-dccd.jpg" alt="Avatar DCCD">
+                <span>digitalcominicacion749</span>
+              </div>
+              <span style="font-size: 0.75rem; background: var(--primary-green); padding: 4px 10px; border-radius: 20px; color: #fff;">
+                Seguir
+              </span>
+            </div>
+            <div class="mockup-grid">
+              <img src="Imagenes/piezas graficas/pieza-fragancia-velora.png" alt="Post Velora">
+              <img src="Imagenes/piezas graficas/pieza-cafe-artesanal.png" alt="Post Café">
+              <img src="Imagenes/piezas graficas/pieza-ciclismo-mtb.png" alt="Post Ciclismo">
+              <img src="Imagenes/piezas graficas/pieza-hamburguesas.jpg" alt="Post Hamburguesa">
+              <img src="Imagenes/Banner/banner-rumbo-digital.jpg" alt="Banner Rumbo Digital">
+              <img src="Imagenes/piezas graficas/pieza-educativa.png" alt="Post Educativo">
+            </div>
+            <div style="margin-top: 14px; text-align: center; font-size: 0.82rem; color: var(--text-muted);">
+              <i class="fa-solid fa-heart" style="color: #f43f5e;"></i> Publicaciones creativas continuas
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FORMULARIO DE DIAGNÓSTICO Y COTIZACIÓN (REQUISITO 8)
+         ========================================================================== -->
+    <section class="diagnosis-section section-padding" id="diagnostico">
+      <div class="container">
+        
+        <div class="diagnosis-wrapper">
+          <div class="diagnosis-header">
+            <span class="section-badge">
+              <i class="fa-solid fa-clipboard-check"></i> Formulario de Diagnóstico y Cotización
+            </span>
+            <h2 class="section-title">
+              Descubre cómo podemos ayudarte a <span>alcanzar tus objetivos</span>
+            </h2>
+            <p>
+              Queremos asegurarnos de ser la opción indicada para ti. Completa el siguiente formulario para explicarnos qué metas deseas lograr y cuál es tu presupuesto estimado; con esta información analizaremos si nuestros servicios se alinean con tus necesidades y te propondremos el paquete que mejor se adapte a tu proyecto y nos estaremos comunicando con usted para mejor asesoría.
+            </p>
+          </div>
+
+          <!-- Indicador Visual de Pasos del Formulario -->
+          <div class="form-steps-nav">
+            <div class="step-indicator active">
+              <div class="step-circle">1</div>
+              <span class="step-title">Contacto</span>
+            </div>
+            <div class="step-indicator">
+              <div class="step-circle">2</div>
+              <span class="step-title">Proyecto</span>
+            </div>
+            <div class="step-indicator">
+              <div class="step-circle">3</div>
+              <span class="step-title">Presupuesto</span>
+            </div>
+            <div class="step-indicator">
+              <div class="step-circle">4</div>
+              <span class="step-title">Tiempo</span>
+            </div>
+          </div>
+
+          <!-- Formulario Completo -->
+          <form id="diagnosisForm" novalidate>
+            
+            <!-- SECCIÓN 1: INFORMACIÓN DE CONTACTO -->
+            <div class="form-section-card" id="form-step-1">
+              <div class="form-section-header">
+                <div class="section-num">1</div>
+                <h3>Información de Contacto</h3>
+              </div>
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="fullName">Nombre completo <span class="required">*</span></label>
+                  <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Ej: Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                  <label for="companyName">Nombre de tu empresa o proyecto <span class="required">*</span></label>
+                  <input type="text" id="companyName" name="companyName" class="form-control" placeholder="Ej: Mi Emprendimiento / Marca" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo electrónico <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="nombre@correo.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Teléfono / WhatsApp <span class="required">*</span></label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="Ej: +57 300 123 4567" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="socialLinks">Página web o redes sociales actuales <span style="color: var(--text-muted); font-weight: 400;">(opcional)</span></label>
+                <input type="text" id="socialLinks" name="socialLinks" class="form-control" placeholder="Ej: @miempresa en Instagram o https://miweb.com">
+              </div>
+            </div>
+
+            <!-- SECCIÓN 2: TU PROYECTO Y OBJETIVOS -->
+            <div class="form-section-card" id="form-step-2">
+              <div class="form-section-header">
+                <div class="section-num">2</div>
+                <h3>Tu Proyecto y Objetivos</h3>
+              </div>
+              
+              <div class="form-group">
+                <label>¿Qué quieres lograr con nuestra ayuda? <span class="required">*</span> <small style="color: var(--text-muted); font-weight: 400;">(Selecciona las opciones que apliquen)</small></label>
+                
+                <div class="checkboxes-group">
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="goals" value="Crear la identidad visual de mi marca (Logo, paleta de colores, manual de marca)">
+                    <span>Crear la identidad visual de mi marca (Logo, paleta de colores, manual de marca)</span>
+                  </label>
+
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="goals" value="Diseño y creación de contenido para redes sociales">
+                    <span>Diseño y creación de contenido para redes sociales</span>
+                  </label>
+
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="goals" value="Estrategia y comunicación digital">
+                    <span>Estrategia y comunicación digital</span>
+                  </label>
+
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="goals" value="Producción gráfica / publicitaria">
+                    <span>Producción gráfica / publicitaria</span>
+                  </label>
+
+                  <div style="margin-top: 6px;">
+                    <label for="otherGoal" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px; display: block;">Otro objetivo:</label>
+                    <input type="text" id="otherGoal" name="otherGoal" class="form-control" placeholder="Escribe aquí si tienes otro objetivo en mente...">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectIdea">Cuéntanos brevemente sobre tu idea o necesidad principal:</label>
+                <textarea id="projectIdea" name="projectIdea" class="form-control" placeholder="Escribe aquí los detalles de tu proyecto, a qué público te diriges y qué esperas transmitir..."></textarea>
+              </div>
+            </div>
+
+            <!-- SECCIÓN 3: PRESUPUESTO Y ALCANCE -->
+            <div class="form-section-card" id="form-step-3">
+              <div class="form-section-header">
+                <div class="section-num">3</div>
+                <div>
+                  <h3>Presupuesto y Alcance</h3>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">
+                    ¿Cuál es tu presupuesto estimado para este proyecto? (Esto nos permite saber qué alcance y tipo de paquete te podemos ofrecer)
+                  </p>
+                </div>
+              </div>
+
+              <div class="radios-group">
+                <label class="custom-radio-card">
+                  <input type="radio" name="budget" value="Paquete Básico" required>
+                  <div>
+                    <span>Paquete Básico</span>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Ideal para emprendimientos iniciales o piezas puntuales.</div>
+                  </div>
+                </label>
+
+                <label class="custom-radio-card">
+                  <input type="radio" name="budget" value="Paquete Intermedio">
+                  <div>
+                    <span>Paquete Intermedio</span>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Contenido regular para redes y diseño de campañas.</div>
+                  </div>
+                </label>
+
+                <label class="custom-radio-card">
+                  <input type="radio" name="budget" value="Paquete Completo / Personalizado">
+                  <div>
+                    <span>Paquete Completo / Personalizado</span>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Gestión integral, branding, audiovisual y pauta digital.</div>
+                  </div>
+                </label>
+
+                <label class="custom-radio-card">
+                  <input type="radio" name="budget" value="Aún no lo tengo definido, busco asesoría">
+                  <div>
+                    <span>Aún no lo tengo definido</span>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Busco asesoría personalizada de DCCD para definirlo.</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- SECCIÓN 4: TIEMPO DE EJECUCIÓN -->
+            <div class="form-section-card" id="form-step-4">
+              <div class="form-section-header">
+                <div class="section-num">4</div>
+                <div>
+                  <h3>Tiempo de Ejecución</h3>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">
+                    ¿Para cuándo necesitas tener listo este proyecto?
+                  </p>
+                </div>
+              </div>
+
+              <div class="radios-group">
+                <label class="custom-radio-card">
+                  <input type="radio" name="timeframe" value="Lo antes posible (Urgente)" required>
+                  <span>Lo antes posible (Urgente)</span>
+                </label>
+
+                <label class="custom-radio-card">
+                  <input type="radio" name="timeframe" value="En las próximas 2 a 4 semanas">
+                  <span>En las próximas 2 a 4 semanas</span>
+                </label>
+
+                <label class="custom-radio-card">
+                  <input type="radio" name="timeframe" value="En 1 o 2 meses">
+                  <span>En 1 o 2 meses</span>
+                </label>
+
+                <label class="custom-radio-card">
+                  <input type="radio" name="timeframe" value="Solo estoy explorando opciones por ahora">
+                  <span>Solo estoy explorando opciones por ahora</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- BOTÓN DE ENVÍO -->
+            <div class="form-submit-row">
+              <p class="submit-note">
+                <i class="fa-solid fa-lock" style="color: var(--primary-green-light);"></i>
+                Tus datos están protegidos y solo serán utilizados por el equipo DCCD para brindarte la propuesta.
+              </p>
+              <button type="submit" class="btn btn-accent btn-lg" style="letter-spacing: 0.5px;">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>ENVIAR SOLICITUD DE PROPUESTA</span>
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (PIE DE PÁGINA)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Columna Marca -->
+        <div class="footer-brand">
+          <img src="Imagenes/Logo/logo-dccd.jpg" alt="Logo DCCD">
+          <h3>DCCD</h3>
+          <div class="slogan">Creamos • Conectamos • Impactamos</div>
+          <p>
+            Diseño, Contenido y Comunicación Digital. Especialistas en diseño gráfico, manejo de redes sociales y estrategias visuales para emprendimientos, empresas e instituciones educativas.
+          </p>
+        </div>
+
+        <!-- Columna Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio"><i class="fa-solid fa-angle-right"></i> Inicio</a></li>
+            <li><a href="#nosotros"><i class="fa-solid fa-angle-right"></i> Quiénes Somos</a></li>
+            <li><a href="#servicios"><i class="fa-solid fa-angle-right"></i> Servicios Digitales</a></li>
+            <li><a href="#galeria"><i class="fa-solid fa-angle-right"></i> Galería de Piezas</a></li>
+            <li><a href="#diagnostico"><i class="fa-solid fa-angle-right"></i> Diagnóstico y Cotización</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna Servicios -->
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="#servicios"><i class="fa-solid fa-check"></i> Redes Sociales</a></li>
+            <li><a href="#servicios"><i class="fa-solid fa-check"></i> Promoción de Productos</a></li>
+            <li><a href="#servicios"><i class="fa-solid fa-check"></i> Campañas para Eventos</a></li>
+            <li><a href="#servicios"><i class="fa-solid fa-check"></i> Identidad Visual & Logos</a></li>
+            <li><a href="#servicios"><i class="fa-solid fa-check"></i> Contenido Audiovisual</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna Contacto & Redes (Requisito 7) -->
+        <div class="footer-col">
+          <h4>Conéctate con Nosotros</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/digitalcominicacion749/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; font-weight: 600;">
+                @digitalcominicacion749
+              </a>
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Atención WhatsApp Personalizada</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <span>contacto@dccdcreativo.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Anserma, Caldas • Cobertura Global</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 DCCD (Diseño, Contenido y Comunicación Digital). Todos los derechos reservados.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" class="open-auth-modal" style="color: var(--text-muted);"><i class="fa-solid fa-user-lock"></i> Portal de Clientes</a>
+          <a href="#inicio" style="color: var(--accent-yellow);"><i class="fa-solid fa-arrow-up"></i> Volver arriba</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: LIGHTBOX DE GALERÍA DE PIEZAS GRÁFICAS
+       ========================================================================== -->
+  <div class="modal-overlay" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Visualizador de Pieza Gráfica">
+    <div class="modal-container lightbox-modal">
+      <button class="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+      <div class="lightbox-content-grid">
+        <div class="lightbox-img-wrap">
+          <img src="" alt="Pieza Gráfica DCCD" id="lightboxImg">
+        </div>
+        <div class="lightbox-details">
+          <span class="tag" id="lightboxTag">Diseño Publicitario</span>
+          <h3 id="lightboxTitle">Título del Proyecto</h3>
+          <p style="font-size: 0.85rem; color: var(--accent-yellow); margin-bottom: 12px;">
+            <i class="fa-solid fa-user-tag"></i> Cliente: <span id="lightboxClient" style="color: #ffffff;">DCCD</span>
+          </p>
+          <p id="lightboxDesc">Descripción de la pieza gráfica.</p>
+          
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <a href="#" id="lightboxCtaBtn" target="_blank" rel="noopener" class="btn btn-accent btn-sm">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Cotizar una Pieza Similar</span>
+            </a>
+            <button type="button" class="btn btn-outline btn-sm modal-close-btn-inner" onclick="closeModal(document.getElementById('lightboxModal'))">
+              Cerrar Vista Previa
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: RESUMEN Y ENVÍO POR WHATSAPP DE COTIZACIÓN (REQUISITO 8)
+       ========================================================================== -->
+  <div class="modal-overlay" id="summaryModal" role="dialog" aria-modal="true" aria-label="Resumen de Solicitud de Propuesta">
+    <div class="modal-container" style="max-width: 680px; padding: 36px;">
+      <button class="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+      <div id="summaryContent">
+        <!-- Renderizado dinámicamente por js/main.js -->
+      </div>
+      <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+        <a href="#" id="summaryWhatsAppBtn" target="_blank" rel="noopener" class="btn btn-accent" style="flex: 1;">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Enviar Copia a WhatsApp DCCD</span>
+        </a>
+        <button type="button" class="btn btn-outline" onclick="closeModal(document.getElementById('summaryModal'))">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 3: INICIO DE SESIÓN POR USUARIO / PORTAL CLIENTES (REQUISITO 8)
+       ========================================================================== -->
+  <div class="modal-overlay" id="authModal" role="dialog" aria-modal="true" aria-label="Portal de Clientes DCCD">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+      
+      <!-- Pestañas Auth -->
+      <div class="auth-tabs">
+        <button class="auth-tab-btn active" data-target="paneLogin">Iniciar Sesión</button>
+        <button class="auth-tab-btn" data-target="paneRegister">Registrarme</button>
+        <button class="auth-tab-btn" data-target="paneDashboard">Mi Panel</button>
+      </div>
+
+      <div class="auth-body">
+        
+        <!-- Pestaña 1: Iniciar Sesión -->
+        <div class="auth-tab-pane" id="paneLogin" style="display: block;">
+          <div style="text-align: center; margin-bottom: 24px;">
+            <img src="Imagenes/Logo/logo-dccd.jpg" alt="DCCD" style="width: 50px; height: 50px; border-radius: 50%; margin: 0 auto 10px auto; border: 2px solid var(--primary-green-light);">
+            <h3>Acceso a Clientes DCCD</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Ingresa para consultar el estado de tus piezas y cotizaciones.</p>
+          </div>
+
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="loginEmail">Correo Electrónico</label>
+              <input type="email" id="loginEmail" name="loginEmail" class="form-control" placeholder="tu@correo.com" required>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Contraseña</label>
+              <input type="password" id="loginPassword" name="loginPassword" class="form-control" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              <span>Iniciar Sesión</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Pestaña 2: Registro -->
+        <div class="auth-tab-pane" id="paneRegister" style="display: none;">
+          <div style="text-align: center; margin-bottom: 24px;">
+            <h3>Crea tu Cuenta de Cliente</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Regístrate para recibir asesoría personalizada y seguimiento exclusivo.</p>
+          </div>
+
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="regName">Nombre Completo</label>
+              <input type="text" id="regName" name="regName" class="form-control" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="regCompany">Empresa o Emprendimiento</label>
+              <input type="text" id="regCompany" name="regCompany" class="form-control" placeholder="Nombre de tu negocio" required>
+            </div>
+            <div class="form-group">
+              <label for="regEmail">Correo Electrónico</label>
+              <input type="email" id="regEmail" name="regEmail" class="form-control" placeholder="tu@correo.com" required>
+            </div>
+            <div class="form-group">
+              <label for="regPassword">Contraseña</label>
+              <input type="password" id="regPassword" name="regPassword" class="form-control" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn btn-accent" style="width: 100%; margin-top: 10px;">
+              <i class="fa-solid fa-user-plus"></i>
+              <span>Registrarme en DCCD</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Pestaña 3: Panel de Control del Cliente -->
+        <div class="auth-tab-pane" id="paneDashboard" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <div>
+              <h3 id="userGreeting" style="font-size: 1.3rem;">¡Bienvenido a tu Panel!</h3>
+              <p style="font-size: 0.85rem; color: var(--text-light-green);">Cliente Verificado de DCCD</p>
+            </div>
+            <button type="button" class="btn btn-sm btn-outline" id="logoutBtn" style="color: #f43f5e; border-color: rgba(244, 63, 94, 0.3);">
+              <i class="fa-solid fa-power-off"></i> Salir
+            </button>
+          </div>
+
+          <!-- Estado de Proyectos Simulados -->
+          <h4 style="font-size: 1rem; margin-bottom: 12px; color: var(--accent-yellow);">
+            <i class="fa-solid fa-list-check"></i> Proyectos en Curso
+          </h4>
+          <div style="background: rgba(13, 18, 16, 0.7); border: 1px solid var(--border-color); border-radius: 10px; padding: 14px; margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px;">
+              <span>Pack Gráfico Redes Sociales (Feed + Reels)</span>
+              <span style="color: #10b981;">80% Completado</span>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); border-radius: 10px; height: 6px; overflow: hidden; margin-bottom: 8px;">
+              <div style="background: var(--accent-yellow); width: 80%; height: 100%;"></div>
+            </div>
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Estado: Revisión final y entrega de archivos finales.</span>
+          </div>
+
+          <!-- Historial de Diagnósticos y Cotizaciones Guardadas -->
+          <h4 style="font-size: 1rem; margin-bottom: 12px; color: var(--accent-yellow);">
+            <i class="fa-solid fa-file-invoice-dollar"></i> Tus Diagnósticos & Cotizaciones
+          </h4>
+          <div id="quotesListContainer">
+            <!-- Cargado por js/main.js -->
+          </div>
+
+          <div style="margin-top: 24px; text-align: center;">
+            <a href="https://wa.me/573000000000?text=Hola%20DCCD,%20estoy%20en%20el%20portal%20de%20clientes%20y%20necesito%20asistencia" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Soporte Directo con Equipo Creativo</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       WIDGET FLOTANTE WHATSAPP CON ACCESO INMEDIATO
+       ========================================================================== -->
+  <aside class="whatsapp-floating" aria-label="Contacto por WhatsApp">
+    <div class="whatsapp-tooltip">
+      ¡Escríbenos para asesoría directa!
+    </div>
+    <a href="https://wa.me/573000000000?text=Hola%20equipo%20DCCD,%20quiero%20cotizar%20servicios%20de%20dise%C3%B1o%20y%20contenido%20digital" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chatear por WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </aside>
+
+  <!-- Script Principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
